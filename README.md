@@ -1,5 +1,5 @@
 # masked-face-classifier
-Final project for CS4262. Group member: Chang Yu, Amy Chen, Hunter Wang
+Final project for CS4262. Group members: Chang Yu, Amy Chen, Hunter Wang
 
 The scripts in this project assume the directory structure below:
 ```
