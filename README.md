@@ -1,0 +1,25 @@
+# masked-face-classifier
+Final project for CS4262. Group member: Chang Yu, Amy Chen, Hunter Wang
+
+To run the pca-svm pipeline, clone this repo, change to the corresponding directory, and simply type the command `python pca-svm.py`.
+
+## Progress:
+Below is the classification report for the pca-svm model I just trained (~2000 images used):
+```
+                    precision    recall  f1-score   support
+Incorrectly maksed       0.85      0.83      0.84       219
+  Correctly masked       0.79      0.81      0.80       171
+          accuracy                           0.82       390
+         macro avg       0.82      0.82      0.82       390
+      weighted avg       0.82      0.82      0.82       390
+```
+
+And below is the normalized confusion matrix:
+
+![Confusion Matrix](/confusion_matrix_pca.png?raw=true)
+
+Considering the fact that I only used a very small portion of the dataset, I'd say it's looking pretty good so far.
+
+## TODO
+1. CNN: ResNet50 or VGG16
+2. PCA-SVM pipeline: prettier visualizations
