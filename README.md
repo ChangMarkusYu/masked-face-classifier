@@ -1,6 +1,19 @@
 # masked-face-classifier
 Final project for CS4262. Group member: Chang Yu, Amy Chen, Hunter Wang
 
+The scripts in this project assume the directory structure below:
+```
+/masked-face-classifier
+    |_/CMFD <- correctly masked face images
+        |_/00000
+        |_/00010
+          ...
+    |_/IMFD <- incorrectly masked face images
+        |_/00000
+        |_/00010
+           ...
+```
+
 To run the pca-svm pipeline, clone this repo, change to the corresponding directory, and simply type the command `python pca-svm.py`.
 
 ## Progress:
