@@ -6,6 +6,9 @@ The scripts in this project assume the directory structure below:
 /masked-face-classifier
     |_/CMFD <- correctly masked face images
         |_/00000
+            |_00000_Mask.jpg
+            |_00001_Mask.jpg
+                ...
         |_/00010
           ...
     |_/IMFD <- incorrectly masked face images
