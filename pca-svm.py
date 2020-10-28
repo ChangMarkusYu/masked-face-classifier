@@ -38,5 +38,5 @@ y_predicted = clf.predict(X_test)
 print(classification_report(y_test, y_predicted, target_names=target_names))
 # show the confusion matrix
 plot_confusion_matrix(clf, X_test, y_test, display_labels=target_names,
-            cmap=plt.cm.Blues, normalize='true')
+                      cmap=plt.cm.Blues, normalize='true')
 plt.show()
