@@ -20,6 +20,12 @@ The scripts in this project assume the directory structure below:
 To run the pca-svm pipeline, clone this repo, change to the corresponding directory, and simply type the command `python pca-svm.py`.
 
 ## Progress:
+### Preprocessing
+Read image as gray scale image (1024, 1024). Downsample it to (256,256)
+by averaging the pixel values in each 8 by 8 pixel block. Finally,
+flatten the 2d matrix into a 1d vector.
+
+### Results
 Below is the classification report for the pca-svm model I just trained (~2000 images used):
 ```
                     precision    recall  f1-score   support
