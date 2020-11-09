@@ -22,7 +22,7 @@ To run the pca-svm pipeline, clone this repo, change to the corresponding direct
 ## Progress:
 ### Preprocessing
 Read images as gray scale images (1024, 1024). Downsample to (256,256)
-by averaging the pixel values in each 8 by 8 pixel block. Finally,
+by averaging the pixel values in each 4 by 4 pixel block. Finally,
 flatten the 2d matrix into a 1d vector.
 
 ### Results
