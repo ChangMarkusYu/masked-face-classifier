@@ -18,7 +18,7 @@ J = 0  # Just load folder 00000 for now
 
 '''
 Read image as gray scale image (1024, 1024). Downsample it to (256,256)
-by averaging the pixel values in each 8 by 8 pixel block. Finally,
+by averaging the pixel values in each 4 by 4 pixel block. Finally,
 flatten the 2d matrix into a 1d vector.
 
 Grayscale and downsamping is a must, otherwise the memory cost will be too huge
