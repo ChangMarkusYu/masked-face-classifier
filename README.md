@@ -28,7 +28,7 @@ flatten the 2d matrix into a 1d vector.
 ### Results
 A straightforward grid search cross validation is used for selecting the hyperparameters for SVM. The parameter grid used is as below:
 ```
-'C':      [1e3,    5e3,    1e4,   5e4,   1e5]
+'C':     [1e3,    5e3,    1e4,   5e4,   1e5]
 'gamma': [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.1]
 ```
 Below is the classification report for the pca-svm model I just trained (~2000 images used):
