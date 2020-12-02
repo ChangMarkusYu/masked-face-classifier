@@ -20,6 +20,15 @@ pca.fit(X_train)
 X_train = pca.transform(X_train)
 X_test = pca.transform(X_test)
 
+# save first 15 eigen faces
+fig, axs = plt.subplots(3, 5, figsize=(15,15))
+for i in range(3):
+    for j in range(5):
+        pc = pca.components_[i * 5 + j,:]
+        pc = pc.reshape((128,128))
+        axs[i, j].imshow(pc, interpolation="nearest")
+fig.savefig("eigenfaces.png")
+
 # Hyperparameters
 print("Starting grid search...")
 param_grid = {'C': [1e3, 5e3, 1e4, 5e4, 1e5],
