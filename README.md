@@ -52,7 +52,8 @@ Considering the fact that I only used a very small portion of the dataset, I'd s
 Loaded the data in as target size (224,224) to construct a VGG16 model using Keras.
 
 ### Results
-For the VGG16 model, the model was trained using 2540 images (equally masked and unmasked) and tested on a test set of 300 images each and a test set of 592 images. The training and validation accuracies and corresponding losses are shown in Figure 4 below. The training process stopped after 46 epochs and took about 1220 seconds with a validation accuracy of 99.7%. Then we used the best model to test on the test set of images and the final test accuracy is 98.0%. 
+For the VGG16 model, the model was trained using 2540 images (equally masked and unmasked) and tested on a test set of 300 images each and a test set of 592 images. The training and validation accuracies and corresponding losses are shown in Figure 4 below. The training process stopped after 46 epochs and took about 1220 seconds with a validation accuracy of 99.7%. Then we used the best model to test on the test set of images and the final test accuracy is 98.0%. Below is the training result:
+![VGG16 Training](/VGG16_result.png)
 
 ## Discussion
 The results from both methods are very promising. The accuracy of the PCA-SVM method is higher than our previous expectation. The VGG16 Model works very well for this task as our expectation. However, there are still some limitations in our research and experiments:
