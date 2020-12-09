@@ -1,7 +1,9 @@
 # masked-face-classifier
 Final project for CS4262. Group members: Chang Yu, Amy Chen, Hunter Wang
 
-The scripts in this project assume the directory structure below:
+There are two versions of the PCA-SVM pipeline, the ipynb uses the same set of train, test, validation set as used in VGG16 model (hosted in GDrive).
+
+The scripts (util.py, pca_svm.py) in this project assume the directory structure below:
 ```
 /masked-face-classifier
     |_/CMFD <- correctly masked face images
@@ -46,6 +48,19 @@ And below is the normalized confusion matrix:
 ![Confusion Matrix](/confusion_matrix_pca.png?raw=true)
 
 Considering the fact that I only used a very small portion of the dataset, I'd say it's looking pretty good so far.
+
+If the same set of training, testing data is used as in the VGG16 model, the results are as below:
+
+```
+                    precision    recall  f1-score   support
+Incorrectly maksed       0.85      0.86      0.86       299
+  Correctly masked       0.86      0.85      0.85       293
+          accuracy                           0.85       592
+         macro avg       0.85      0.85      0.85       592
+      weighted avg       0.85      0.85      0.85       592
+```
+
+![Confusion Matrix](/confusion_matrix_pca_2.png?raw=true)
 
 ## VGG16 Model
 ### Preprocessing
